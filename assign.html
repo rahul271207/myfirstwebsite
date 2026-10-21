@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Enquiry Form</title>
+</head>
+
+<body style="font-family: Arial; background-color: #eef2f7;">
+
+<div style="width: 650px; margin: 40px auto; background-color: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px gray;">
+
+    <h1 style="text-align: center; color: white; background-color: #1e3a8a; padding: 20px; border-radius: 10px;">College Enquiry Form</h1>
+
+    <p style="text-align: center; color: gray;">Please fill in your details</p>
+
+    <form action="#" method="post">
+
+        <fieldset style="border: 2px solid #ddd; padding: 20px; border-radius: 10px;">
+            <legend style="color: #1e3a8a; font-weight: bold;">Personal Details</legend>
+
+            <label for="name"><b>Full Name:</b></label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required style="width: 95%; padding: 10px; margin: 8px 0 15px;">
+
+            <label for="email"><b>Email:</b></label><br>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required style="width: 95%; padding: 10px; margin: 8px 0 15px;">
+
+            <label for="phone"><b>Phone Number:</b></label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Enter phone number" style="width: 95%; padding: 10px; margin: 8px 0 15px;">
+
+            <label for="dob"><b>Date of Birth:</b></label><br>
+            <input type="date" id="dob" name="dob" style="padding: 10px; margin: 8px 0 15px;">
+
+            <br>
+
+            <label><b>Gender:</b></label><br><br>
+
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset style="border: 2px solid #ddd; padding: 20px; border-radius: 10px;">
+            <legend style="color: #1e3a8a; font-weight: bold;">Academic Details</legend>
+
+            <label for="course"><b>Interested Course:</b></label><br>
+
+            <select id="course" name="course" required style="width: 98%; padding: 10px; margin: 8px 0 15px;">
+                <option value="">-- Select Course --</option>
+                <option value="CSE">Computer Science Engineering</option>
+                <option value="Cyber Security">Cyber Security</option>
+                <option value="AI DS">Artificial Intelligence & Data Science</option>
+                <option value="ECE">Electronics & Communication Engineering</option>
+                <option value="EEE">Electrical & Electronics Engineering</option>
+                <option value="Mechanical">Mechanical Engineering</option>
+            </select>
+
+            <label for="qualification"><b>Qualification:</b></label><br>
+
+            <input list="qualifications" id="qualification" name="qualification" placeholder="Select qualification" style="width: 95%; padding: 10px; margin: 8px 0 15px;">
+
+            <datalist id="qualifications">
+                <option value="10th">
+                <option value="12th">
+                <option value="Diploma">
+            </datalist>
+
+            <label for="marks"><b>Percentage:</b></label><br>
+
+            <input type="number" id="marks" name="marks" min="0" max="100" placeholder="Enter percentage" style="width: 95%; padding: 10px; margin: 8px 0 15px;">
+
+        </fieldset>
+
+        <br>
+
+        <fieldset style="border: 2px solid #ddd; padding: 20px; border-radius: 10px;">
+            <legend style="color: #1e3a8a; font-weight: bold;">Enquiry Details</legend>
+
+            <label><b>What information do you need?</b></label><br><br>
+
+            <input type="checkbox" id="admission" name="enquiry" value="Admission">
+            <label for="admission">Admission</label><br>
+
+            <input type="checkbox" id="fees" name="enquiry" value="Fees">
+            <label for="fees">Fees</label><br>
+
+            <input type="checkbox" id="hostel" name="enquiry" value="Hostel">
+            <label for="hostel">Hostel</label><br>
+
+            <input type="checkbox" id="placement" name="enquiry" value="Placement">
+            <label for="placement">Placement</label><br><br>
+
+            <label for="contact"><b>Preferred Contact Method:</b></label><br>
+
+            <select id="contact" name="contact" style="width: 98%; padding: 10px; margin: 8px 0 15px;">
+                <option value="Email">Email</option>
+                <option value="Phone">Phone</option>
+                <option value="WhatsApp">WhatsApp</option>
+            </select>
+
+            <label for="message"><b>Your Enquiry:</b></label><br>
+
+            <textarea id="message" name="message" rows="5" placeholder="Write your enquiry here..." style="width: 95%; padding: 10px; margin: 8px 0 15px;"></textarea>
+
+            <label for="document"><b>Upload Document:</b></label><br>
+
+            <input type="file" id="document" name="document" style="margin: 10px 0 15px;">
+
+        </fieldset>
+
+        <br>
+
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I confirm that the information provided is correct.</label>
+
+        <br><br>
+
+        <div style="text-align: center;">
+
+            <button type="submit" style="background-color: #1e3a8a; color: white; border: none; padding: 12px 25px; border-radius: 6px;">Submit Enquiry</button>
+
+            <button type="reset" style="background-color: #6b7280; color: white; border: none; padding: 12px 25px; border-radius: 6px;">Reset</button>
+
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
+```

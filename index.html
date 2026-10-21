@@ -1,27 +1,40 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My  Website</title>
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to Changed First Website</h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynamic CSS Grid Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <header class="header">
+      <div><p class="eyebrow">CAMPUS ANALYTICS</p><h1>Dashboard Overview</h1><p class="subtitle">A responsive dashboard built with CSS Grid.</p></div>
+      <div class="profile"><span class="avatar" aria-hidden="true">SA</span><span>Student Admin</span></div>
     </header>
-
-    <main>
-      <p>This website details has been changed to its original form
-        .</p>
-      <p>Learning Git and GitHub is easy!</p>
-      <p>Technology has become an important part of our daily lives. 
-        From smartphones and computers to artificial intelligence and
-      the internet, technology helps us communicate, learn, work,
-    and solve problems faster. However, as technology grows, cyber
-      threats are also increasing. Cybersecurity helps protect computers,\
-      networks, applications, and personal information from hackers and
-       other digital threats. Learning programming, networking,          and cybersecurity can help students understand how technology 
-       works and how to protect digital systems. With continuous practice 
-           and curiosity, students can develop useful technical skills and build
-             a successful career in the technology field.</p>
+    <aside class="sidebar" aria-label="Main navigation">
+      <h2>Navigation</h2><a class="nav-link active" href="#overview">Overview</a><a class="nav-link" href="#courses">Courses</a><a class="nav-link" href="#activities">Activities</a><a class="nav-link" href="#reports">Reports</a>
+    </aside>
+    <main class="main-content" id="overview">
+      <section class="welcome panel"><p class="eyebrow">YOUR SUMMARY</p><h2>Welcome back!</h2><p>Review key learning activities and course progress at a glance.</p></section>
+      <section class="stats" aria-label="Summary statistics">
+        <article class="stat-card panel"><p class="stat-label">Enrolled Courses</p><p class="stat-value">06</p><p class="stat-note">This semester</p></article>
+        <article class="stat-card panel"><p class="stat-label">Tasks Completed</p><p class="stat-value">24</p><p class="stat-note">Out of 30 tasks</p></article>
+        <article class="stat-card panel"><p class="stat-label">Attendance</p><p class="stat-value">92%</p><p class="stat-note">Current semester</p></article>
+      </section>
+      <section class="content-grid">
+        <article class="panel course-panel" id="courses"><div class="section-heading"><div><p class="eyebrow">KEEP LEARNING</p><h2>Course Progress</h2></div><span class="pill">3 courses</span></div>
+          <div class="course"><div class="course-heading"><span>Front End Technologies</span><strong>80%</strong></div><div class="progress-track"><span style="width:80%"></span></div></div>
+          <div class="course"><div class="course-heading"><span>JavaScript Fundamentals</span><strong>65%</strong></div><div class="progress-track"><span style="width:65%"></span></div></div>
+          <div class="course"><div class="course-heading"><span>UI/UX Design</span><strong>90%</strong></div><div class="progress-track"><span style="width:90%"></span></div></div>
+        </article>
+        <article class="panel activity-panel" id="activities"><div class="section-heading"><div><p class="eyebrow">RECENT UPDATES</p><h2>Recent Activities</h2></div></div>
+          <ul class="activity-list"><li><span class="activity-dot"></span><div><strong>Wireframe submitted</strong><p>UI/UX Design · Today</p></div></li><li><span class="activity-dot"></span><div><strong>CSS Grid practice</strong><p>Front End Technologies · Yesterday</p></div></li><li><span class="activity-dot"></span><div><strong>Quiz completed</strong><p>JavaScript Fundamentals · 2 days ago</p></div></li></ul>
+        </article>
+      </section>
+      <section class="panel report-panel" id="reports"><div><p class="eyebrow">PERFORMANCE</p><h2>Weekly Learning Report</h2><p>You have completed 24 of 30 planned learning tasks this week.</p></div><div class="report-badge" aria-label="80 percent complete">80%</div></section>
+      <footer class="footer"><p>Dynamic CSS Grid Dashboard · Activity 3</p></footer>
+    </main>
+  </div>
+</body>
 </html>

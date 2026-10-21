@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Bootstrap - Concept by Concept</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background: #f5f7fb; }
+    .teaching-section { background: #fff; border: 2px solid #dce3ee; border-radius: 12px; padding: 1.25rem; margin-bottom: 1.5rem; }
+    .section-label { color: #0d6efd; font-size: .8rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+    .demo-box { background: #eef4ff; border: 1px dashed #7da7f7; border-radius: 8px; padding: 1rem; height: 100%; }
+    .hero { background: linear-gradient(120deg, #0d6efd, #5b4bdb); color: #fff; border-radius: 12px; padding: 2rem; }
+  </style>
+</head>
+<body>
+>
+  <header class="container py-4">
+    <div class="p-4 bg-white rounded-3 shadow-sm">
+      <p class="section-label">Bootstrap classroom demonstration</p>
+      <h1 class="display-6 fw-bold">Learn Bootstrap by Seeing the Output</h1>
+      <p class="lead mb-2">Each numbered section demonstrates one Bootstrap concept. Match the section number in the HTML comments with the visible result.</p>
+      <p class="text-muted mb-0">Resize the browser window to observe responsive behaviour.</p>
+    </div>
+  </header>
+
+  <main class="container pb-5">
+
+    <section id="section-1" class="teaching-section">
+      <p class="section-label">Section 1 — Container, typography and spacing</p>
+      <h2 class="h4">1. A neatly aligned content area</h2>
+      <p>The <code>container</code> class provides a responsive content width. <code>text-center</code> centers text, <code>fw-bold</code> makes it bold, and <code>mb-3</code> adds bottom spacing.</p>
+      <div class="container bg-light border rounded p-3">
+        <h3 class="h5 text-center fw-bold mb-3">Welcome to Our College</h3>
+        <p class="text-muted mb-0">This paragraph uses Bootstrap's muted text and spacing utilities.</p>
+      </div>
+    </section>
+
+
+    <section id="section-2" class="teaching-section">
+      <p class="section-label">Section 2 — Buttons and colours</p>
+      <h2 class="h4">2. Ready-made button styles</h2>
+      <p>Bootstrap button classes combine a common base style with a colour or outline variation. Bootstrap mainly supplies the appearance; these are still normal HTML buttons.</p>
+      <div class="d-flex flex-wrap gap-2">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-success">Danger</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-outline-primary">Outline</button>
+        <button type="button" class="btn btn-warning btn-lg">Large button</button>
+      </div>
+      <p class="small text-muted mt-3 mb-0">Try changing <code>btn-success</code> to <code>btn-danger</code> in the code.</p>
+    </section>
+
+   
+    <section id="section-3" class="teaching-section">
+      <p class="section-label">Section 3 — Utility classes</p>
+      <h2 class="h4">3. Change appearance without writing new CSS</h2>
+      <p>Classes such as <code>p-3</code>, <code>mt-3</code>, <code>bg-primary</code>, <code>text-white</code>, <code>rounded</code> and <code>shadow</code> control common visual details.</p>
+      <div class="bg-primary text-white p-3 mt-3 rounded shadow">
+        <h3 class="h5">A highlighted announcement</h3>
+        <p class="mb-0">Padding, background, text colour, rounded corners and shadow are applied with Bootstrap classes.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 4: RESPONSIVE GRID -->
+    <section id="section-4" class="teaching-section">
+      <p class="section-label">Section 4 — Responsive grid</p>
+      <h2 class="h4">4. Arrange content into columns</h2>
+      <p><code>row</code> creates a grid row. Each <code>col-md-6</code> takes one-third of the row at the medium breakpoint and above. Below that breakpoint, the columns stack vertically.</p>
+      <div class="row g-3">
+        <div class="col-md-8"><div class="demo-box"><h3 class="h5">HTML</h3><p class="mb-0">Structure of the webpage.</p></div></div>
+        <div class="col-md-6"><div class="demo-box"><h3 class="h5">CSS</h3><p class="mb-0">Appearance of the webpage.</p></div></div>
+        <div class="col-md-6"><div class="demo-box"><h3 class="h5">Bootstrap</h3><p class="mb-0">Reusable layout and styles.</p></div></div>
+      </div>
+      <p class="small text-muted mt-3 mb-0">Experiment: change all three <code>col-md-6</code> classes to <code>col-md-6</code>, save the file, and observe the layout.</p>
+    </section>
+
+    <!-- SECTION 5: CARDS -->
+    <section id="section-5" class="teaching-section">
+      <p class="section-label">Section 5 — Cards</p>
+      <h2 class="h4">5. Display events or products as cards</h2>
+      <p>The <code>card</code>, <code>card-body</code>, <code>card-title</code>, <code>card-text</code> and <code>card-footer</code> classes create a reusable content component.</p>
+      <div class="row g-3">
+        <div class="col-md-6"><div class="card h-100"><div class="card-body"><span class="badge text-bg-primary mb-2">Workshop</span><h3 class="card-title h5">Web Design</h3><p class="card-text">Learn how to create clear and attractive webpages.</p></div><div class="card-footer bg-white"><button type="button" class="btn btn-primary btn-sm">View details</button></div></div></div>
+        <div class="col-md-6"><div class="card h-100"><div class="card-body"><span class="badge text-bg-success mb-2">Competition</span><h3 class="card-title h5">Hackathon</h3><p class="card-text">Work as a team to solve a real-world problem.</p></div><div class="card-footer bg-white"><button type="button" class="btn btn-success btn-sm">View details</button></div></div></div>
+        <div class="col-md-6"><div class="card h-100"><div class="card-body"><span class="badge text-bg-warning mb-2">Talk</span><h3 class="card-title h5">Startup Stories</h3><p class="card-text">Listen to founders share their experiences.</p></div><div class="card-footer bg-white"><button type="button" class="btn btn-warning btn-sm">View details</button></div></div></div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: NAVBAR -->
+    <section id="section-6" class="teaching-section">
+      <p class="section-label">Section 6 — Navigation bar</p>
+      <h2 class="h4">6. Create a navigation bar</h2>
+      <p><code>navbar</code> and <code>navbar-expand-lg</code> establish the navigation component and responsive expansion behaviour. The toggler uses Bootstrap JavaScript.</p>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded px-3">
+        <a class="navbar-brand" href="#section-6">SECE Events</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#demoNavbar" aria-controls="demoNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="demoNavbar"><ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link active" href="#section-1">Home</a></li><li class="nav-item"><a class="nav-link" href="#section-5">Events</a></li><li class="nav-item"><a class="nav-link" href="#section-7">Register</a></li></ul></div>
+      </nav>
+      <p class="small text-muted mt-3 mb-0">Make the browser narrow to see the menu button. Click it to open or close the menu.</p>
+    </section>
+
+    <!-- SECTION 7: FORM CONTROLS -->
+    <section id="section-7" class="teaching-section">
+      <p class="section-label">Section 7 — Forms</p>
+      <h2 class="h4">7. Style a registration form</h2>
+      <p><code>form-label</code>, <code>form-control</code>, <code>form-select</code> and <code>form-check</code> give form controls consistent spacing and styling.</p>
+      <form id="registrationForm">
+        <div class="mb-3"><label for="studentName" class="form-label">Student name</label><input type="text" class="form-control" id="studentName" placeholder="Enter NAME" required></div>
+        <div class="mb-3"><label for="studentEmail" class="form-label">Email address</label><input type="email" class="form-control" id="studentEmail" placeholder="eNTER MAIK" required><div class="form-text">We will use this for event communication.</div></div>
+        <div class="mb-3"><label for="eventChoice" class="form-label">Choose an event</label><select class="form-select" id="eventChoice" required><option value="">Select one event</option><option>Web Design Workshop</option><option>Hackathon</option><option>Startup Stories</option></select></div>
+        <div class="form-check mb-3"><input class="form-check-input" type="checkbox" id="termsCheck" required><label class="form-check-label" for="termsCheck">I confirm that the details are correct.</label></div>
+        <button type="submit" class="btn btn-primary">Submit registration</button>
+      </form>
+      <div id="formMessage" class="alert alert-success mt-3 d-none" role="status">Registration form submitted successfully for this demonstration.</div>
+      <p class="small text-muted mt-3 mb-0">This is a front-end demonstration only. It does not save data to a server.</p>
+    </section>
+
+    <!-- SECTION 8: ALERTS -->
+    <section id="section-8" class="teaching-section">
+      <p class="section-label">Section 8 — Alerts and feedback</p>
+      <h2 class="h4">8. Show feedback to the user</h2>
+      <p>Use <code>alert</code> with <code>alert-success</code>, <code>alert-warning</code> or <code>alert-danger</code> to display messages with a consistent design.</p>
+      <div class="alert alert-success" role="alert"><strong>Success!</strong> Your registration details look good.</div>
+      <div class="alert alert-warning" role="alert"><strong>Reminder:</strong> Check the event date before registering.</div>
+      <div class="alert alert-danger mb-0" role="alert"><strong>Error example:</strong> This is how an error message could look.</div>
+    </section>
+
+    <!-- SECTION 9: RESPONSIVE HERO + COMBINED CLASSES -->
+    <section id="section-9" class="teaching-section">
+      <p class="section-label">Section 9 — Combine Bootstrap concepts</p>
+      <h2 class="h4">9. A simple landing-page banner</h2>
+      <p>Real webpages combine container, spacing, typography, buttons and responsive grid classes rather than using only one Bootstrap component.</p>
+      <div class="hero"><div class="row align-items-center g-3"><div class="col-lg-8"><h3 class="display-6 fw-bold">Build. Learn. Create.</h3><p class="lead mb-0">Join our student technology events and turn ideas into projects.</p></div><div class="col-lg-4 text-lg-end"><a href="#section-7" class="btn btn-light btn-lg">Register now</a></div></div></div>
+    </section>
+
+    <!-- SECTION 10: SUMMARY -->
+    <section class="teaching-section">
+      <p class="section-label">Section 10 — Quick recap</p>
+      <h2 class="h4">What did Bootstrap make easier?</h2>
+      <ul class="mb-0"><li>Ready-made button and alert styles.</li><li>Spacing, colours, alignment and typography utilities.</li><li>Responsive columns using the grid system.</li><li>Reusable cards, navigation bars and form controls.</li><li>Faster development with less custom CSS.</li></ul>
+    </section>
+  </main>
+
+  <!-- Bootstrap JavaScript bundle enables the responsive navbar toggler. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Bootstrap supplies the styling; this JavaScript demonstrates form interaction.
+    const registrationForm = document.getElementById("registrationForm");
+    const formMessage = document.getElementById("formMessage");
+    registrationForm.addEventListener("submit", function (event) {
+      event.preventDefault(); // Keep the browser on this page for the demonstration.
+      formMessage.classList.remove("d-none");
+      formMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
+  </script>
+</body>
+</html>
